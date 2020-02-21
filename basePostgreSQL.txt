@@ -1,0 +1,46 @@
+--nome da base: LP1
+
+create table cliente(
+
+codigo serial primary key,
+
+nome varchar(50) not null,
+
+fone varchar(20));
+
+
+create table locacao(
+
+codigo serial primary key,
+
+total float,
+datalocacao date,
+
+dataprevista date,
+
+datadevolucao date,
+
+codcli int not null,
+
+constraint rv01 foreign key(codcli) references cliente(codigo) on update cascade);
+
+
+create table equipamento (
+
+codigo serial primary key,
+
+descr varchar(50),
+
+precodiaria float);
+
+create table item (
+
+codigo serial primary key,
+
+codequipamento int not null,
+
+codlocacao int not null,
+
+constraint ri01 foreign key(codequipamento) references equipamento(codigo) on update cascade,
+
+constraint ri02 foreign key(codlocacao) references locacao(codigo) on update cascade);
