@@ -225,7 +225,8 @@ namespace Loja
             try
             {
                 bb = new Banco();
-                bb.comando.CommandText = "select sum(total),avg(total) from locacao group by date_part('day',datalocacao)";
+                bb.comando.CommandText = "select sum(total),avg(total), datalocacao " +
+                    "from locacao group by datalocacao order by datalocacao";
 
                 bb.dreader = bb.comando.ExecuteReader();
                 bb.tabela = new DataTable();

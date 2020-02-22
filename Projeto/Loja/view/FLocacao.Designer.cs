@@ -153,7 +153,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(88, 355);
+            this.txtTotal.Location = new System.Drawing.Point(130, 354);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
@@ -162,11 +162,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(47, 358);
+            this.label6.Location = new System.Drawing.Point(47, 357);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 13);
+            this.label6.Size = new System.Drawing.Size(77, 13);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Total:";
+            this.label6.Text = "Total da diária:";
             // 
             // btnFinalizar
             // 

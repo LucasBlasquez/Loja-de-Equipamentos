@@ -58,74 +58,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Banco.cs" />
-    <Compile Include="Cliente.cs" />
-    <Compile Include="Equipamento.cs" />
-    <Compile Include="FCliente.cs">
+    <Compile Include="model\Banco.cs" />
+    <Compile Include="model\Cliente.cs" />
+    <Compile Include="model\Equipamento.cs" />
+    <Compile Include="view\FCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FCliente.Designer.cs">
+    <Compile Include="view\FCliente.Designer.cs">
       <DependentUpon>FCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="FDevolver.cs">
+    <Compile Include="view\FDevolver.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FDevolver.Designer.cs">
+    <Compile Include="view\FDevolver.Designer.cs">
       <DependentUpon>FDevolver.cs</DependentUpon>
     </Compile>
-    <Compile Include="FEquipamento.cs">
+    <Compile Include="view\FEquipamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FEquipamento.Designer.cs">
+    <Compile Include="view\FEquipamento.Designer.cs">
       <DependentUpon>FEquipamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="FGrafico.cs">
+    <Compile Include="view\FGrafico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FGrafico.Designer.cs">
+    <Compile Include="view\FGrafico.Designer.cs">
       <DependentUpon>FGrafico.cs</DependentUpon>
     </Compile>
-    <Compile Include="FLocacao.cs">
+    <Compile Include="view\FLocacao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FLocacao.Designer.cs">
+    <Compile Include="view\FLocacao.Designer.cs">
       <DependentUpon>FLocacao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="view\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="view\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FRelatorio.cs">
+    <Compile Include="view\FRelatorio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FRelatorio.Designer.cs">
+    <Compile Include="view\FRelatorio.Designer.cs">
       <DependentUpon>FRelatorio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Item.cs" />
-    <Compile Include="Locacao.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="model\Item.cs" />
+    <Compile Include="model\Locacao.cs" />
+    <Compile Include="controller\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FCliente.resx">
+    <EmbeddedResource Include="view\FCliente.resx">
       <DependentUpon>FCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FDevolver.resx">
+    <EmbeddedResource Include="view\FDevolver.resx">
       <DependentUpon>FDevolver.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FEquipamento.resx">
+    <EmbeddedResource Include="view\FEquipamento.resx">
       <DependentUpon>FEquipamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FGrafico.resx">
+    <EmbeddedResource Include="view\FGrafico.resx">
       <DependentUpon>FGrafico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FLocacao.resx">
+    <EmbeddedResource Include="view\FLocacao.resx">
       <DependentUpon>FLocacao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="view\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FRelatorio.resx">
+    <EmbeddedResource Include="view\FRelatorio.resx">
       <DependentUpon>FRelatorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -148,7 +148,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="controller\App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

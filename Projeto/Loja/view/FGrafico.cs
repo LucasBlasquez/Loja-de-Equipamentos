@@ -47,18 +47,22 @@ namespace Loja
                 chart1.ChartAreas[0].AxisY.Title = "Valores";
 
                 // se a consulta retornar algum registro
+
+                double axisLabelPos = 0.5;
                 if (lobj.grafico().Rows != null)
                 {
                     // percorrer os registros do DataTable do obj
                     for (int i = 0; i < lobj.grafico().Rows.Count; i++)
                     {
-                        // Adicionar pontos referente ao primeiro campo -> sum(total)
+                        string data = string.Format("{0:dd/MM/yyyy}", lobj.grafico().Rows[i][2]);
+                        
+                        chart1.ChartAreas[0].AxisX.CustomLabels.Add(axisLabelPos, axisLabelPos + 1, data);
+                        axisLabelPos++;
+
                         chart1.Series[0].Points.Add(new DataPoint
                         {
                             YValues = new double[] { Convert.ToDouble(lobj.grafico().Rows[i][0]) },
                         });
-
-                        // Adicionar pontos referentes ao segundo campo -> agv(total)
 
                         chart1.Series[1].Points.Add(Convert.ToDouble(lobj.grafico().Rows[i][1]));
                     }
